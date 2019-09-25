@@ -51,23 +51,23 @@ $(document).ready(function(){
   });
 });
 
-// 9.Schimbati alternativ culoarea unui text la apasarea unui buton.
+// 9.Schimbati culoarea unui text la apasarea unui buton.
 $(document).ready(function(){
   $("#colorButton").click(function(){
-    $("p").css("color", "red");
+    $(".textChange").css("color", "red");
   });
 });
 
 // 10. Găsiți clasa CSS a  elementului pe care s-a dat click
 $("li").click(function() {
   var colorClass = this.className;
-  alert('Clasa este' + colorClass);
+  alert('Clasa este ' + colorClass);
 });
 
-// 11. Eliminați atributul disabled folosind jQuery.
+// 11. Eliminați CSS din html..
 $(document).ready(function(){
   $("#remove").click(function(){
-    $("p").removeAttr("style");
+    $(".removeColor").removeAttr("style");
   });
 });
 
@@ -120,7 +120,7 @@ $('#pct').find('input:checked').each(function(){
 $( "#divColor" ).click(function() {
     var color = $( this ).css( "background-color");
     var fontSS = $( this ).css( "font-size");
-  $( "#divColor1" ).html( "That div is " + color + " " + fontSS +".");
+  $( "#divColor1" ).html( "Stilurile div-ului sunt: " + color + ", " + fontSS +".");
 });
 
 
